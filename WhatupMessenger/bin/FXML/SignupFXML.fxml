@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="841.0" prefWidth="368.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupController">
+   <children>
+      <JFXTextField fx:id="id" layoutX="79.0" layoutY="101.0" prefHeight="28.0" prefWidth="219.0" promptText="Id">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="password" layoutX="79.0" layoutY="203.0" prefHeight="28.0" prefWidth="219.0" promptText="Password">
+         <font>
+            <Font size="14.0" />
+         </font></JFXPasswordField>
+      <JFXTextField fx:id="name" layoutX="79.0" layoutY="152.0" prefHeight="28.0" prefWidth="219.0" promptText="Name">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="passwordCheck" layoutX="79.0" layoutY="255.0" prefHeight="28.0" prefWidth="219.0" promptText="Password Check">
+         <font>
+            <Font size="14.0" />
+         </font></JFXPasswordField>
+      <JFXButton fx:id="signup" layoutX="141.0" layoutY="774.0" onAction="#signupAction" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: #1DDB16;" text="Sign up" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXRadioButton fx:id="male" layoutX="101.0" layoutY="309.0" text="Male" textFill="#a0a2ab">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="female" layoutX="201.0" layoutY="309.0" text="Female" textFill="#a0a2ab" toggleGroup="$gender">
+         <font>
+            <Font size="14.0" />
+         </font></JFXRadioButton>
+      <Label layoutX="140.0" layoutY="55.0" prefHeight="25.0" prefWidth="88.0" text="Sign up" textFill="#2196f3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="login" layoutX="274.0" layoutY="14.0" onAction="#loginAction" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: #151928; -fx-border-color: #a0a2ab;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXTextField fx:id="phone" layoutX="80.0" layoutY="354.0" prefHeight="28.0" prefWidth="219.0" promptText="Phone">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="email" layoutX="80.0" layoutY="400.0" prefHeight="28.0" prefWidth="219.0" promptText="email">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXTextArea fx:id="intro" layoutX="79.0" layoutY="459.0" prefHeight="106.0" prefWidth="219.0" promptText="introduce yourself...">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton fx:id="browser" layoutX="157.0" layoutY="727.0" onAction="#browserAction" style="-fx-background-color: #151928;" text="Browser" textFill="WHITE" />
+      <ImageView fx:id="imageView" fitHeight="143.0" fitWidth="219.0" layoutX="80.0" layoutY="574.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

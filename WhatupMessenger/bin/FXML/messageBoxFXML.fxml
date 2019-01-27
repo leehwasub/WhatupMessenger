@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import de.jensd.fx.glyphs.testapps.*?>
+<?import de.jensd.fx.glyphs.weathericons.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="628.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MessageBoxController">
+   <children>
+      <Label layoutX="-1.0" prefHeight="25.0" prefWidth="634.0" style="-fx-background-color: #151928;" text="                                                            message List" textAlignment="CENTER" textFill="#2196f3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="messageList" layoutX="-1.0" layoutY="25.0" onMouseClicked="#getMessageContent" prefHeight="310.0" prefWidth="634.0" />
+      <JFXButton fx:id="send" layoutX="537.0" layoutY="474.0" onAction="#sendAction" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #2196f3;" text="send" textFill="WHITE" />
+      <JFXTextArea fx:id="messageContent" layoutX="14.0" layoutY="341.0" prefHeight="124.0" prefWidth="613.0" />
+      <JFXButton fx:id="delete" layoutX="434.0" layoutY="474.0" onAction="#deleteAction" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: #FF4848;" text="delete" textFill="WHITE" />
+   </children>
+</AnchorPane>

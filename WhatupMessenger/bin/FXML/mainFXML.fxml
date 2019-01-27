@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import de.jensd.fx.glyphs.testapps.*?>
+<?import de.jensd.fx.glyphs.weathericons.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="873.0" onMouseEntered="#getWindow" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="239.0" style="-fx-background-color: #2D3447;">
+         <children>
+            <Label layoutX="26.0" layoutY="27.0" prefHeight="25.0" prefWidth="85.0" text="Whatup" textFill="#1ddb16">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="104.0" layoutY="27.0" text="Messenger" textFill="#2196f3">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="2.0" layoutY="76.0" prefHeight="429.0" prefWidth="239.0" style="-fx-background-color: #151928;">
+               <children>
+                  <Label layoutX="33.0" layoutY="32.0" text="Menu" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="logout" layoutX="57.0" layoutY="177.0" onMouseClicked="#logoutClick" text="logout" textFill="#a0a2ab">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="messageBox" layoutX="56.0" layoutY="109.0" prefHeight="19.0" onMouseClicked="#messageBoxClick" prefWidth="99.0" text="messageBox" textFill="#a0a2ab">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="profile" layoutX="56.0" layoutY="144.0" onMouseClicked="#profileClick" prefHeight="19.0" prefWidth="99.0" text="profile" textFill="#a0a2ab">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="home" layoutX="57.0" layoutY="75.0" onMouseClicked="#homeClick" text="home" textFill="#a0a2ab">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainPane" layoutX="241.0" prefHeight="500.0" prefWidth="632.0" />
+   </children>
+</AnchorPane>

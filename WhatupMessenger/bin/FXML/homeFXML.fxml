@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import de.jensd.fx.glyphs.testapps.*?>
+<?import de.jensd.fx.glyphs.weathericons.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="628.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeController">
+   <children>
+      <ListView fx:id="userlist" layoutX="436.0" layoutY="24.0" onMouseClicked="#userListClick" prefHeight="476.0" prefWidth="192.0" />
+      <JFXTextField fx:id="chatField" layoutX="12.0" layoutY="463.0" prefHeight="23.0" prefWidth="372.0" />
+      <JFXTextArea fx:id="chatArea" editable="false" layoutX="12.0" layoutY="28.0" prefHeight="422.0" prefWidth="410.0" />
+      <FontAwesomeIcon fx:id="chatSend" glyphName="ANGLE_DOUBLE_RIGHT" layoutX="401.0" layoutY="484.0" onMouseClicked="#chatSendEnter" size="2em" />
+      <Label layoutX="436.0" prefHeight="25.0" prefWidth="192.0" style="-fx-background-color: #151928;" text="                userList" textAlignment="CENTER" textFill="#2196f3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="-1.0" prefHeight="25.0" prefWidth="438.0" style="-fx-background-color: #151928;" text="                                         main chat" textAlignment="CENTER" textFill="#2196f3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

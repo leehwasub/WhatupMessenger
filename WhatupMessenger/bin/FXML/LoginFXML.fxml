@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="356.0" prefWidth="367.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <JFXTextField fx:id="id" layoutX="75.0" layoutY="141.0" prefHeight="23.0" prefWidth="216.0" promptText="Id" />
+      <JFXPasswordField fx:id="password" layoutX="76.0" layoutY="192.0" prefHeight="23.0" prefWidth="216.0" promptText="Password" />
+      <JFXButton fx:id="login" layoutX="126.0" layoutY="256.0" onAction="#loginAction" prefHeight="32.0" prefWidth="114.0" style="-fx-background-color: #1DDB16;" text="Login" textFill="WHITE" />
+      <Label layoutX="87.0" layoutY="78.0" prefHeight="15.0" prefWidth="79.0" text="Whatup" textFill="#1ddb16">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="166.0" layoutY="78.0" prefHeight="25.0" prefWidth="114.0" text="Messenger" textFill="#2196f3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="signup" layoutX="269.0" layoutY="14.0" onAction="#signupAction" prefHeight="32.0" prefWidth="79.0" style="-fx-background-color: #151928; -fx-border-color: #a0a2ab;" text="Sign up" textFill="WHITE" />
+      <Label fx:id="forgotPassword" layoutX="130.0" layoutY="313.0" prefHeight="15.0" prefWidth="106.0" text="Forgot password?" textFill="#a0a2ab" underline="true" />
+   </children>
+</AnchorPane>

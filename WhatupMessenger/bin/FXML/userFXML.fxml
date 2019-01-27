@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="276.0" prefWidth="265.0" style="-fx-background-color: #151928;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.UserController">
+   <children>
+      <Label fx:id="message" layoutX="27.0" layoutY="26.0" prefHeight="15.0" prefWidth="150.0" text="...님입니다" textFill="#a0a2ab" />
+      <JFXButton fx:id="talkAlone" layoutX="84.0" layoutY="85.0" onAction="#talkAloneAction" prefHeight="23.0" prefWidth="94.0" style="-fx-background-color: #2196f3;" text="talk alone" textFill="WHITE" />
+      <JFXButton fx:id="sendMessage" layoutX="80.0" layoutY="127.0" onAction="#sendMessageAction" prefHeight="23.0" prefWidth="103.0" style="-fx-background-color: #2196f3;" text="send message" textFill="WHITE" />
+      <JFXButton fx:id="viewProfile" layoutX="84.0" layoutY="168.0" onAction="#viewProfileAction" prefHeight="23.0" prefWidth="94.0" style="-fx-background-color: #2196f3;" text="view profile" textFill="WHITE" />
+   </children>
+</AnchorPane>

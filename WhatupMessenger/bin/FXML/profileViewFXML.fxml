@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import de.jensd.fx.glyphs.testapps.*?>
+<?import de.jensd.fx.glyphs.weathericons.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="602.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProfileViewController">
+   <children>
+      <Label layoutX="17.0" layoutY="24.0" prefHeight="22.0" prefWidth="65.0" text="picture">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="picture" fitHeight="210.0" fitWidth="207.0" layoutX="17.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="279.0" layoutY="68.0" text="Id">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="269.0" layoutY="107.0" text="name" />
+      <Label layoutX="265.0" layoutY="147.0" text="gender" />
+      <Label layoutX="269.0" layoutY="225.0" prefHeight="15.0" prefWidth="32.0" text="Email" />
+      <Label layoutX="17.0" layoutY="329.0" prefHeight="18.0" prefWidth="85.0" text="introdution">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="intro" editable="false" layoutX="17.0" layoutY="357.0" prefHeight="129.0" prefWidth="559.0" />
+      <Label fx:id="id" layoutX="343.0" layoutY="68.0" prefHeight="15.0" prefWidth="156.0" text="Label" />
+      <Label fx:id="name" layoutX="343.0" layoutY="107.0" prefHeight="15.0" prefWidth="139.0" text="Label" />
+      <Label fx:id="gender" layoutX="343.0" layoutY="147.0" prefHeight="15.0" prefWidth="139.0" text="Label" />
+      <Label fx:id="phone" layoutX="343.0" layoutY="187.0" prefHeight="15.0" prefWidth="139.0" text="Label" />
+      <Label layoutX="265.0" layoutY="187.0" prefHeight="15.0" prefWidth="41.0" text="Phone" />
+      <Label fx:id="email" layoutX="343.0" layoutY="225.0" prefHeight="15.0" prefWidth="139.0" text="Label" />
+   </children>
+</AnchorPane>
